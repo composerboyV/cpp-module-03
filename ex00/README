@@ -1,0 +1,23 @@
+먼저 수업을 구현해야 합니다! 정말 독창적이네요!
+ClapTrap이라고 불리며 괄호 안에 지정된 값으로 다음과 같은 비공개 속성이 초기화됩니다:
+
+• 생성자에게 매개변수로 전달되는 이름
+• 히트 포인트 (10), 클랩트랩의 상태를 나타냅니다
+• 에너지 포인트 (10)
+• 공격 피해 (0)
+• Name, which is passed as parameter to a constructor
+• Hit points (10), represent the health of the ClapTrap
+• Energy points (10)
+• Attack damage (0)
+
+
+다음 공개 회원 기능을 추가하여 ClapTrap이 더 현실적으로 보이도록 합니다:
+• void attack(const std::string& target);
+• void takeDamage(unsigned int amount);
+• void beRepaired(unsigned int amount);
+클랩트랙이 공격하면 목표물이 <공격 피해> 명중점을 잃게 됩니다.
+클랩트랩이 스스로 수리하면 <금액>의 히트 포인트를 돌려받습니다. 공격과 수리 비용은 각각 1 에너지 포인트입니다. 물론, 남은 히트 포인트나 에너지 포인트가 없다면 클랩트랩은 아무것도 할 수 없습니다.
+이 모든 멤버 함수에서는 무슨 일이 일어나는지 설명하기 위해 메시지를 출력해야 합니다. 예를 들어, attack() 함수는 다음과 같은 것을 표시할 수 있습니다(물론 각도 괄호 없이):
+클랩트랩 <이름>이 <타겟>을 공격하여 <피해> 피해 지점을 생성합니다!
+생성자와 파괴자도 메시지를 표시해야 하므로 동료 평가자가 호출된 것을 쉽게 확인할 수 있습니다.
+코드가 예상대로 작동하는지 확인하기 위해 직접 테스트를 실행하고 제출하세요.
