@@ -6,7 +6,7 @@
 /*   By: junkwak <junkwak@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 17:28:06 by junkwak           #+#    #+#             */
-/*   Updated: 2025/03/22 17:28:07 by junkwak          ###   ########.fr       */
+/*   Updated: 2025/03/22 18:12:59 by junkwak          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,34 +17,34 @@ int main()
 {
     // ClapTrap 객체 생성 및 테스트
     std::cout << "\n----- ClapTrap 테스트 -----\n" << std::endl;
-    ClapTrap clap("Clappy");
-    clap.attack("타겟");
+    ClapTrap clap("[1ClapTrap1]");
+    clap.attack("Target");
     clap.takeDamage(5);
     clap.beRepaired(3);
 
     // ScavTrap 객체 생성 및 테스트
     std::cout << "\n----- ScavTrap 테스트 -----\n" << std::endl;
-    ScavTrap scav("Scavvy");
-    scav.attack("타겟");
+    ScavTrap scav("{1ScavTrap1}");
+    scav.attack("Target");
     scav.takeDamage(20);
     scav.beRepaired(10);
     scav.guardGate();
 
     // FragTrap 객체 생성 및 테스트
     std::cout << "\n----- FragTrap 테스트 -----\n" << std::endl;
-    FragTrap frag("Fraggy");
-    frag.attack("타겟");
+    FragTrap frag("(1FragTrap1)");
+    frag.attack("Target");
     frag.takeDamage(25);
     frag.beRepaired(15);
     frag.highFivesGuys();
 
     // DiamondTrap 객체 생성 및 테스트
     std::cout << "\n----- DiamondTrap 테스트 -----\n" << std::endl;
-    DiamondTrap diamond("Shiny");
+    DiamondTrap diamond("*1Diamond1*");
     
     // 기본 속성 확인
     std::cout << "\n기본 공격으로 속성 확인" << std::endl;
-    diamond.attack("타겟");
+    diamond.attack("Target");
     diamond.takeDamage(30);
     diamond.beRepaired(20);
     
